@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* Paleta Global Unificada */
+    --color-bg: #f4f7f9;
+    --color-surface: #ffffff;
+    --color-primary: #3b82f6;
+    --color-secondary: #7c3aed;
+    --color-accent: #10b981;
+    --color-dark: #1e293b;
+    --color-gray: #64748b;
+    --color-gray-light: #e2e8f0;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-dark);
+    background-color: var(--color-bg);
+}
+
+/* Encabezado */
+.header-subtemas {
+    background-color: var(--color-surface);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+
+.container-logo i {
+    color: var(--color-primary);
+    font-size: 24px;
+    background-color: #eff6ff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.container-logo .logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+nav ul li a {
+    color: var(--color-dark);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-primary);
+    background-color: #eff6ff;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--color-dark);
+    border: none;
+    background: transparent;
+}
+
+/* Hero Principal del Subtema */
+.heroprin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    padding: 40px 20px;
+    color: white;
+}
+.hero-ansiedad {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+}
+
+.hero-alimenticios {
+    background: linear-gradient(135deg, #7c3aed 0%, #c084fc 100%);
+}
+
+.hero-depresion {
+    background: linear-gradient(135deg, #0f172a 0%, #475569 100%);
+}
+
+.hero-autoestima {
+    background: linear-gradient(135deg, #059669 0%, #34d399 100%);
+}
+
+.hero-relaciones {
+    background: linear-gradient(135deg, #db2777 0%, #f472b6 100%);
+}
+.hero-estudiantes {
+    background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+}
+.hero-relaciones {
+    background: linear-gradient(135deg, #db2777 0%, #f472b6 100%);
+}
+.hero-sustancias {
+    background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+}
+.hero-ets {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+}
+.hero-eoe {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0d9488 100%);
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    font-size: 1.05rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.foto {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.foto img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 12px;
+
+
+}
+
+/* Cuerpo y Noticias */
+.cuerpo {
+    padding: 50px 20px;
+}
+
+.continente {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cabeza {
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--color-primary);
+    padding-bottom: 10px;
+}
+
+.cabeza h2 {
+    font-size: 1.8rem;
+    color: var(--color-dark);
+}
+
+/* Estilo Tarjeta Desplegable (<details>) */
+.card-noticia {
+    background: var(--color-surface);
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid var(--color-gray-light);
+}
+
+.card-noticia:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+summary {
+    padding: 0;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    height: 160px;
+    position: relative;
+    align-items: center;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.summary-image {
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.summary-text-container {
+    padding: 20px 60px 20px 25px;
+    flex: 1;
+}
+
+.summary-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+/* Indicador de Despliegue */
+summary::after {
+    content: '▼';
+    font-size: 0.8rem;
+    color: var(--color-gray);
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    background: var(--color-bg);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+details[open] summary::after {
+    transform: translateY(-50%) rotate(180deg);
+    background: var(--color-primary);
+    color: white;
+}
+
+/* Contenido Interno */
+.content {
+    padding: 30px;
+    line-height: 1.7;
+    color: var(--color-dark);
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-gray-light);
+    animation: fadeIn 0.3s ease;
+}
+
+.content ul {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.content li {
+    margin-bottom: 8px;
+    color: var(--color-gray);
+}
+
+.btn-ver-mas {
+    display: inline-block;
+    background-color: #eff6ff;
+    color: var(--color-primary);
+    border: 1px solid #bfdbfe;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    transition: all 0.2s ease;
+}
+
+.btn-ver-mas:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-dark);
+    color: white;
+    padding: 40px 20px 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-container h3, .footer-container h4 {
+    margin-bottom: 15px;
+}
+
+.footer-container ul {
+    list-style: none;
+}
+
+.footer-container ul li a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-container ul li a:hover {
+    color: white;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #334155;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* Estilos para la tabla de horarios del E.O.E. */
+.intro-horarios {
+    margin-bottom: 20px;
+    color: var(--color-dark);
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto; /* Permite scroll horizontal prolijo en celulares pequeños */
+    background: var(--color-surface);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--color-gray-light);
+    margin-bottom: 30px;
+}
+
+.tabla-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tabla-horarios thead {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.tabla-horarios th, 
+.tabla-horarios td {
+    padding: 15px 18px;
+    border-bottom: 1px solid var(--color-gray-light);
+    font-size: 0.95rem;
+}
+
+.tabla-horarios tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tabla-horarios tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+    .heroprin {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto {
+        margin-top: 20px;
+    }
+
+    summary {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .summary-image {
+        width: 100%;
+        height: 180px;
+    }
+
+    .summary-text-container {
+        padding: 20px 50px 20px 20px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-surface);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .summary-title {
+        font-size: 1.1rem;
+    }
+
+    .content {
+        padding: 20px;
+    }
+    .tabla-horarios th, 
+    .tabla-horarios td {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+}

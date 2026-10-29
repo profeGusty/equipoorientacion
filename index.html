@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portal del Equipo de Orientación Escolar (E.O.E) - E.E.S.T N°5 Berazategui. Recursos de salud mental, ESI, líneas de ayuda y prevención para adolescentes."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <title>Bienestar Adolescente - E.E.S.T N°5 Berazategui</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Encabezado MENU -->
+      <header>
+        <div class="container-logo">
+          <i class="fas fa-brain" aria-hidden="true"></i>
+          <span class="logo-text">Bienestar E.E.S.T N°5</span>
+        </div>
+        <nav id="main-nav">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#temas">Temas</a></li>
+            <li><a href="equipo.html">Equipo Orientación</a></li>
+            <li><a href="#lineas-ayuda">Emergencias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación">
+          <i class="fas fa-bars"></i>
+        </button>
+      </header>
+
+      <!-- HERO PRIMERO -->
+      <section class="heroprin">
+        <div class="hero-content">
+          <h1 class="hero-title">Tu bienestar emocional es nuestra prioridad</h1>
+          <p class="hero-subtitle">
+            Un espacio del Equipo de Orientación Escolar para acompañarte, 
+            brindarte información confiable y conectarte con canales de ayuda cerca tuyo.
+          </p>
+          <div class="hero-cta">
+            <a href="#temas" class="btn btn-primary">Explorar temas</a>
+            <a href="#lineas-ayuda" class="btn btn-secondary">Líneas de ayuda</a>
+          </div>
+        </div>
+        <div class="foto">
+          <img src="./img/fotoheros.webp" alt="Estudiantes en el ámbito escolar compartiendo un momento de contención" />
+        </div>
+      </section>
+
+      <!-- INFORMACIÓN PRINCIPAL -->
+      <section class="informacion">
+        <div class="fila">
+          <div class="col">
+            <h2>Apoyo e información para estudiantes</h2>
+            <p>
+              Ofrecemos herramientas y orientación técnica para ayudarte a entender y atravesar distintas situaciones de la vida cotidiana: manejo del estrés, ansiedad, ESI, relaciones interpersonales y acompañamiento escolar.
+            </p>
+          </div>
+
+          <div class="col">
+            <div class="circulo-principal">
+              <img
+                src="./img/Capturailustracionprinci.webp"
+                alt="Ilustración de apoyo psicológico adolescente"
+              />
+            </div>
+          </div>
+
+          <div class="col variantes">
+            <h3>Temas más consultados</h3>
+            <ul id="temas-comunes">
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                <a href="ansiedad.html">Ansiedad y ataques de pánico</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                <a href="depresion.html">Depresión y tristeza</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                <a href="autoestima.html">Baja autoestima</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                <a href="estudiantes.html">Estrés académico</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                <a href="alimenticios.html">Trastornos alimenticios (TCA)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- SECCIÓN MOTIVACIÓN -->
+    <section class="motivacion">
+      <div class="motivacion-texto">
+        <h2>🌈 ¿Cómo te sentís hoy?</h2>
+        <p class="motivacion-sub">
+          A veces no es fácil poner en palabras lo que nos pasa, y está bien.
+        </p>
+        <p>
+          Aquí podés encontrar orientación sobre temas que realmente importan: ansiedad, relaciones, familia, ESI, identidad y salud mental en general.
+        </p>
+        <p class="dondeempezar">
+          🔍 ¿No sabés por dónde empezar? Explorá las secciones de abajo o comunicate directamente con el E.O.E. de la escuela.
+        </p>
+      </div>
+      <img src="./img/ilustración_principal.webp" alt="Ilustración reflexiva sobre emociones" height="300" />
+    </section>
+
+    <!-- EXPLORA NUESTROS TEMAS -->
+    <section id="temas" class="seccion-cards">
+      <h2 class="section-title">Explorá nuestros temas</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="title">
+            <i class="fas fa-brain" aria-hidden="true"></i>
+            <h3>Ansiedad</h3>
+          </div>
+          <div class="option">
+            <ul>
+              <li>Síntomas físicos y emocionales</li>
+              <li>Técnicas de respiración</li>
+              <li>Estrategias de afrontamiento</li>
+            </ul>
+          </div>
+          <a class="btn" href="ansiedad.html">Leer más</a>
+        </article>
+
+        <article class="card">
+          <div class="title">
+            <i class="fas fa-heart-broken" aria-hidden="true"></i>
+            <h3>Depresión</h3>
+          </div>
+          <div class="option">
+            <ul>
+              <li>Reconocer las señales</li>
+              <li>Cuándo buscar ayuda</li>
+              <li>Redes de contención</li>
+            </ul>
+          </div>
+          <a class="btn" href="depresion.html">Leer más</a>
+        </article>
+
+        <article class="card">
+          <div class="title">
+            <i class="fas fa-user-shield" aria-hidden="true"></i>
+            <h3>Autoestima</h3>
+          </div>
+          <div class="option">
+            <ul>
+              <li>Autoimagen y redes sociales</li>
+              <li>Ejercicios prácticos</li>
+              <li>Aceptación personal</li>
+            </ul>
+          </div>
+          <a class="btn" href="autoestima.html">Leer más</a>
+        </article>
+
+        <article class="card">
+          <div class="title">
+            <i class="fas fa-users" aria-hidden="true"></i>
+            <h3>Relaciones</h3>
+          </div>
+          <div class="option">
+            <ul>
+              <li>Comunicación asertiva</li>
+              <li>Límites saludables</li>
+              <li>Prevención de vínculos violentos</li>
+            </ul>
+          </div>
+          <a class="btn" href="relaciones.html">Leer más</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SITUACIONES ESPECÍFICAS -->
+    <section class="seccion-cards">
+      <h2 class="section-title">Recursos para situaciones específicas</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="title">
+            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+            <h3>Vida Escolar</h3>
+          </div>
+          <div class="option">
+            <ul>
+              <li>Estrés académico</li>
+              <li>Organización del estudio</li>
+              <li>Orientación vocacional</li>
+            </ul>
+          </div>
+          <a class="btn" href="estudiantes.html">Leer Más</a>
+        </article>
+
+        <article class="card">
+          <div class="title">
+            <i class="fas fa-pills" aria-hidden="true"></i>
+            <h3>Consumos Problemáticos</h3>
+          </div>
+          <div class="option">
+            <ul>
+              <li>Información y prevención</li>
+              <li>Factores de riesgo</li>
+              <li>Dónde acudir en el distrito</li>
+            </ul>
+          </div>
+          <a class="btn" href="sustancias.html">Leer Más</a>
+        </article>
+
+        <article class="card">
+          <div class="title">
+            <i class="fas fa-utensils" aria-hidden="true"></i>
+            <h3>Conducta Alimentaria (TCA)</h3>
+          </div>
+          <div class="option">
+            <ul>
+              <li>Señales de alerta</li>
+              <li>Presión social y corporal</li>
+              <li>Acompañamiento profesional</li>
+            </ul>
+          </div>
+          <a class="btn" href="alimenticios.html">Leer Más</a>
+        </article>
+
+        <article class="card">
+          <div class="title">
+            <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+            <h3>ESI y Salud Sexual</h3>
+          </div>
+          <div class="option">
+            <ul>
+              <li>Derechos e información</li>
+              <li>Prevención e ITS</li>
+              <li>Centros de salud en Berazategui</li>
+            </ul>
+          </div>
+          <a class="btn" href="ets.html">Leer Más</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- LÍNEAS DE AYUDA Y CENTROS LOCALEs -->    
+    <section class="lineas-ayuda" id="lineas-ayuda">
+      <h2 class="section-title">Líneas de Asistencia y Emergencias</h2>
+      <div class="ayuda-container">
+        <div class="linea-ayuda">
+          <i class="fas fa-phone-alt" aria-hidden="true"></i>
+          <h3>Centro de Asistencia al Suicida</h3>
+          <p class="telefono">135 / (011) 5275-1135</p>
+          <p>Atención gratuita, confidencial y disponible 24 horas.</p>
+        </div>
+
+        <div class="linea-ayuda">
+          <i class="fas fa-headset" aria-hidden="true"></i>
+          <h3>Salud Mental Prov. Buenos Aires</h3>
+          <p class="telefono">0800-222-5462</p>
+          <p>Línea de atención, contención y orientación en salud mental.</p>
+        </div>
+      </div>
+
+      <div class="demas">
+        <a href="caps.html" class="contenedor">
+          <img src="./img/iluscaps.webp" alt="CAPS Berazategui" height="150" />
+          <h3>Centros de Salud (CAPS)</h3>
+          <p>Conocé los 36 CAPS de Berazategui</p>
+        </a>
+        <a href="telefonos.html" class="contenedor">
+          <img src="./img/ilusllamada.webp" alt="Teléfonos útiles" height="150" />
+          <h3>Teléfonos Útiles</h3>
+          <p>Líneas locales y servicios comunitarios</p>
+        </a>
+        <a href="https://berazategui.gob.ar/farmacias/" target="_blank" rel="noopener noreferrer" class="contenedor">
+          <img src="./img/ilusfarmacia.webp" alt="Farmacias de turno" height="150" />
+          <h3>Farmacias de Turno</h3>
+          <p>Consulte las farmacias activas en el distrito</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+<!-- CONTACTO Y SOLICITUD DE ESPACIO CON EL E.O.E. -->
+<section id="contacto" class="contacto">
+  <h2 class="section-title">Escribinos o Solicitá un Espacio con el E.O.E.</h2>
+  <div class="contacto-container">
+    
+    <div class="formulario-contacto">
+      <!-- Mantenemos tu ID de Formspree -->
+      <form id="eoe-form" action="https://formspree.io/f/mzboqoab" method="POST">
+        
+        <div class="form-grupo">
+          <label for="form-nombre">
+            Nombre / Apodo <span class="opcional">(Opcional)</span>
+          </label>
+          <input
+            type="text"
+            id="form-nombre"
+            name="nombre"
+            placeholder="Podés dejarlo en blanco si preferís guardar tu identidad"
+          />
+        </div>
+
+        <div class="form-grupo">
+          <label for="form-curso">
+            Curso y Turno <span class="opcional">(Opcional)</span>
+          </label>
+          <input
+            type="text"
+            id="form-curso"
+            name="curso"
+            placeholder="Ej: 3° 1° - Turno Mañana (Si querés que te busquemos en el aula)"
+          />
+        </div>
+
+        <div class="form-grupo">
+          <label for="form-mensaje">
+            Breve reseña del tema a tratar <span class="requerido">*</span>
+          </label>
+          <textarea
+            id="form-mensaje"
+            name="mensaje"
+            rows="5"
+            placeholder="Contanos brevemente sobre qué te gustaría hablar o qué situación querés avisar al equipo..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" id="form-btn" class="btn-contacto">
+          <i class="fas fa-paper-plane" aria-hidden="true"></i> Enviar mensaje al E.O.E.
+        </button>
+
+        <!-- Cartel de respuesta que se mostrará tras el envío -->
+        <div id="form-status" class="form-status"></div>
+      </form>
+    </div>
+
+    <div class="info-contacto">
+      <h3>Espacio de Contención del E.O.E.</h3>
+      <div class="disclaimer">
+        <p>
+          <strong>🔒 Tu privacidad es importante:</strong> No es obligatorio que dejes tus datos personales si querés mantener el anonimato. Todo lo que envíes a través de este canal será recibido de manera confidencial únicamente por las integrantes del Equipo de Orientación Escolar.
+        </p>
+      </div>
+      <div class="disclaimer">
+        <p>
+          <strong>🏫 Encuentro presencial:</strong> También podés acercarte directamente a la oficina del E.O.E. en la Escuela Técnica N° 5 durante el horario escolar.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <i class="fas fa-brain" aria-hidden="true"></i>
+          <h3>E.E.S.T N°5 Berazategui</h3>
+          <p>Equipo de Orientación Escolar</p>
+        </div>
+        <div class="footer-links">
+          <h4>Enlaces rápidos</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#temas">Temas</a></li>
+            <li><a href="#lineas-ayuda">Emergencias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-resources">
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="caps.html">Centros de Salud Local</a></li>
+            <li><a href="telefonos.html">Teléfonos Útiles</a></li>
+            <li><a href="https://profegusty.github.io/tecnica5berazategui/" target="_blank" rel="noopener noreferrer">Web Institucional E.E.S.T N°5</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Redes</h4>
+          <div class="social-icons">
+            <a href="https://profegusty.github.io/tecnica5berazategui/" target="_blank" rel="noopener noreferrer" aria-label="Sitio Web Escuela"><i class="fa-solid fa-globe"></i>Sitio Oficial</a>
+            <a href="https://www.instagram.com/tecnica_n5_berazategui/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> instagram</a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i> 1127613366</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 E.E.S.T N°5 Berazategui - Portal E.O.E.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navToggle = document.getElementById("nav-toggle");
+        const mainNav = document.getElementById("main-nav");
+
+        if (navToggle && mainNav) {
+          navToggle.addEventListener("click", function () {
+            mainNav.classList.toggle("open");
+            const icon = navToggle.querySelector("i");
+            if (mainNav.classList.contains("open")) {
+              icon.className = "fas fa-times";
+            } else {
+              icon.className = "fas fa-bars";
+            }
+          });
+
+          const navLinks = mainNav.querySelectorAll("a");
+          navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (mainNav.classList.contains("open")) {
+                mainNav.classList.remove("open");
+                navToggle.querySelector("i").className = "fas fa-bars";
+              }
+            });
+          });
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("eoe-form");
+  const status = document.getElementById("form-status");
+  const btn = document.getElementById("form-btn");
+
+  if (form) {
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault(); // Evita la redirección a la página de Formspree
+
+      const data = new FormData(event.target);
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+
+      try {
+        const response = await fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            'Accept': 'json'
+          }
+        });
+
+        if (response.ok) {
+          status.className = "form-status exito";
+          status.innerHTML = '<i class="fas fa-check-circle"></i> ¡Mensaje enviado con éxito! El equipo lo recibirá de manera confidencial.';
+          form.reset(); // Reinicia y limpia todos los campos del formulario
+        } else {
+          const responseData = await response.json();
+          status.className = "form-status error";
+          if (Object.hasOwn(responseData, 'errors')) {
+            status.innerHTML = responseData["errors"].map(error => error["message"]).join(", ");
+          } else {
+            status.innerHTML = '<i class="fas fa-exclamation-circle"></i> Ocurrió un problema al enviar el mensaje. Intentalo de nuevo.';
+          }
+        }
+      } catch (error) {
+        status.className = "form-status error";
+        status.innerHTML = '<i class="fas fa-exclamation-circle"></i> Error de conexión. Verificá tu red e intentalo nuevamente.';
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar mensaje al E.O.E.';
+      }
+    });
+  }
+});
+    </script>
+  </body>
+</html>
